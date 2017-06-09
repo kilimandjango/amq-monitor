@@ -9,9 +9,9 @@
 	and limitations under the License. #L% -->
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
-    <bean class="de.fob.camel.jms.jmsTestProject.MyBean" id="helloBean"/>
-    <bean class="de.fob.camel.jms.jmsTestProject.JmsRouteBuilder" id="jmsRouteBuilderBean"/>
-    <bean class="de.fob.camel.jms.jmsTestProject.ConsumerRouteBuilder" id="consumerRouteBuilder"/>
+    <bean class="de.project.camel.jms.jmsTestProject.MyBean" id="helloBean"/>
+    <bean class="de.project.camel.jms.jmsTestProject.JmsRouteBuilder" id="jmsRouteBuilderBean"/>
+    <bean class="de.project.camel.jms.jmsTestProject.ConsumerRouteBuilder" id="consumerRouteBuilder"/>
     <bean class="org.springframework.jndi.JndiObjectFactoryBean" id="jmsQueueConnectionFactory">
         <property name="jndiName">
             <value>java:jboss/MyConnectionFactory</value>
